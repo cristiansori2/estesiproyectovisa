@@ -10,7 +10,7 @@ def home():
     response = requests.get(url)
     if response.text.__contains__("ACCORD"):
         return "NOS FUIMOS PA BELGICA PINGAAAAAA"
-    elif response.text.__contains__("REJECT"):
+    elif response.text.__contains__("REJET"):
         return "De pinga hay que APELAR"
     elif response.text.__contains__("En traitement"):
         return "DE PINGA TODAVIA NADA"
